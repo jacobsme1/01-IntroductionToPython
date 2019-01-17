@@ -57,10 +57,11 @@ print('Hello, World')
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add another   print   statement below this comment.
 #   It should print any string that you want (but keep it polite and G-rated!)
 #
+print('Lorem Ipsum')
 #   Test your code by re-running this module, either by proceeding
 #   as you did when you ran this module the first time,
 #   or by pressing the green rightward-pointing triangle
