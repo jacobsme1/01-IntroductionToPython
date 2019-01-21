@@ -46,11 +46,9 @@ for k in range(16):
     # Make the size for the NEXT square be 12 pixels smaller.
     bill.pen_down()
     size = size - 30
-
-###############################################################################
-# Example 2.  It shows how to speed up the animation.
-###############################################################################
-window.tracer(50)  # Bigger numbers make the animation run faster
+bill.pen_up()
+bill.forward(1000)
+window.tracer(50)
 
 ted = rg.SimpleTurtle()
 ted.pen = rg.Pen('cyan', 1)
@@ -59,9 +57,8 @@ ted.forward(48)
 ted.right(90)
 ted.forward(44)
 ted.pen_down()
-# The name k takes on the values 0, 1, 2, ... 499 as the loop runs
-for k in range(7000):
+for k in range(70000):
     ted.left(12)
-    ted.forward(k-0.965*k)
+    ted.forward(k-0.89*k)
 
 window.close_on_mouse_click()
