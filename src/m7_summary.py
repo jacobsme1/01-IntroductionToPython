@@ -45,5 +45,13 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ########################################################################
 
 import rosegraphics as rg
-bill = rg.Simple_Turtle()
-bill.pen = rg.Pen('blue')
+window = rg.TurtleWindow()
+bill = rg.SimpleTurtle()
+bill.pen = rg.Pen('blue',1)
+bill.left(90)
+bill.forward(200)
+bill.pen_up()
+bill.go_to(rg.Point(100,-40))
+bill.pen_down()
+bill.pen = rg.Pen('green',10)
+bill.backward(150)
